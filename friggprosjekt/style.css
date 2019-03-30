@@ -1,0 +1,282 @@
+@import 'motion-ui/dist/motion-ui.css';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 72%;
+  
+  font-weight: bold;
+}
+
+.toppMeny{
+  background-color: #c22733;
+}
+
+.toppMeny ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  padding: 5px 0px;;
+  margin: 0 0 0 5px;;
+}
+
+.toppMeny li {
+  align-items: flex-start;
+  margin-right: 15px;
+}
+
+.toppMeny li a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #c22733;
+}
+
+@media only screen and (max-width: 600px) {
+  .toppMeny ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #loggInnPanel {
+    border-radius: 0px !important;
+    min-height: 100px;
+  }
+
+  #loggInnPanel input {
+    border-radius: 0px !important;
+  }
+
+  #loggInnPanel input:last-of-type{
+    left: 0px !important;
+  }
+}
+
+.sisteMenyItem{
+  align-self: flex-end;
+  display: inline-block;
+  margin-left: auto;
+  content: icon
+}
+
+.sisteMenyItem:hover {
+  cursor: grab;
+  color: white;
+}
+
+.sisteMenyItem::before{
+  content:url(bilder/1077966-ecommerce/svg/016-manager.svg);
+  position: relative;
+  width: 15px;
+  top: 2px;
+  display: inline-block;
+  fill: white;
+}
+
+.hovedHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  height: 100px;
+}
+
+#sok {
+  height: min-content;
+  align-self: center;
+}
+
+#sok input {
+  position: relative;
+  bottom: 10px;
+}
+
+#sok::after {
+  display: inline-block;
+  content: ' ';
+  background-image: url('bilder/1077966-ecommerce/svg/018-search.svg');
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+}
+
+#handlekurv {
+  height: 30px;
+  margin-right: 2%;
+  padding: 5px;
+  align-self: center;
+}
+
+#handlekurv:hover {
+  background-color: #c22733;
+  border-radius: 10px;
+}
+
+.underMeny ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.underMeny li {
+  padding: 0px 10px;
+
+}
+
+.underMeny a {
+  font-style: none;
+  text-decoration: none;
+  color: #c22733;
+}
+
+.underMeny a:hover {
+  border-bottom: 2px black solid;
+}
+
+.posterMeny {
+  display: grid;
+  grid-template-columns: repeat(4, 24.7vw);
+  grid-template-rows: 35vw 17vw;
+}
+
+.posterMeny section {
+  text-align: center;
+}
+
+.posterMeny img {
+  width: 95%;
+  filter: grayscale(40%);
+}
+
+.posterMeny img:hover {
+  filter: grayscale(0%);
+}
+
+.posterMeny p {
+  position: relative;
+  bottom: 50%;
+  font-size: 100%;
+  margin: 5px;
+  color:  white;
+  text-transform: uppercase;
+}
+
+.posterMeny section p:last-of-type {
+  font-size: 130%;
+}
+
+#p1 {
+  grid-column: 1 / span 2;
+}
+
+#p2 {
+  grid-column: 3 / span 2;
+}
+
+main {
+  text-align: center;
+  color: #c22733;
+}
+
+.sko-poster-container {
+  display: flex;
+}
+
+.sko-poster {
+  width: 180px;
+}
+
+.sko-poster img{
+  width: 100px;
+}
+
+.antall_container {
+  display: flex;
+  height: 20px;
+  justify-content: space-around;
+}
+
+.antall_container svg{
+  position: relative;
+  bottom: 4px;
+  width: 10px;
+  padding: 10px;
+}
+
+.antall_container svg:after{
+  content:"";
+  padding: 100px;  
+  position: absolute;
+  left: -25px;
+  top: -25px;
+  z-index: 2;
+} 
+
+.antall_container svg:hover {
+  color: black;
+}
+
+
+.antall_container p {
+  position: relative;
+  bottom: 8px;
+  color: black;
+}
+
+.kjopKnapp {
+  width: 70px;
+  background-color: #c22733 !important;
+  border: 2px black;
+}
+
+.kjopKnapp object{
+  position: relative;
+  top: 2px;
+  fill: white;
+  color: white;
+  width: 14px;
+}
+
+#loggInnPanel {
+  display: none;
+  position: absolute;
+  top: 20vw;
+  left: 40vw;
+  width: 20vw;
+  height: 10vw;
+  padding: 15px;
+  background-color: #c22733;
+  border: white 3px solid;
+  border-radius: 100px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+#loggInnPanel input {
+  position: relative;
+  width: 17vw;
+  top: 1.7vw;
+  margin:  auto;
+  border: none;
+  border-radius: 15px;
+border-top-left-radius: 2px;
+border-bottom-right-radius: 2px;
+padding-left: 5%;
+}
+
+#loggInnPanel input:last-of-type {
+  position: relative;
+  left: 2vw;
+  top: 2vw;
+}
+
+
+
+
